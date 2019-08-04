@@ -1,0 +1,5 @@
+.idea
+*.iml
+docker-compose.override.yml
+.env
+__pycache__

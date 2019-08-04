@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+    api:
+        environment:
+            FLASK_APP: app
+            FLASK_DEBUG: 1
+        command: [ "flask", "run", "--host=0.0.0.0" ]

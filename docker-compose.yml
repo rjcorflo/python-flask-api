@@ -1,0 +1,13 @@
+version: "3.5"
+services:
+    api:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        expose:
+            - 5000
+        volumes:
+            - .:/application
+        environment:
+            TEST: data
+            FROM_ENV: ${FROM_ENV}

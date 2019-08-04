@@ -4,8 +4,8 @@ services:
         build:
             context: .
             dockerfile: docker/Dockerfile
-        expose:
-            - 5000
+        ports:
+            - 5000:5000
         volumes:
             - .:/application
         environment:
